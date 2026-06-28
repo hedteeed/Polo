@@ -32,14 +32,13 @@ def _print_urls(host: str, port: int) -> None:
     print("\n  ╔══════════════════════════════════════════════╗")
     print("  ║       Polo Paper Trading — LIVE Dashboard      ║")
     print("  ╚══════════════════════════════════════════════╝\n")
-    print(f"  Local:    http://localhost:{port}")
+    print("  ⚠️  Paste this URL in your browser (NOT about:blank):\n")
+    print(f"  →  http://localhost:{port}")
     if host == "0.0.0.0":
         for ip in _local_ips():
-            print(f"  Network:  http://{ip}:{port}")
-    else:
-        print(f"  Network:  http://{host}:{port}")
-    print(f"\n  WebSocket live stream: ws://<ip>:{port}/ws/live")
-    print("  Updates every ~8s · Auto-scans every 90s\n")
+            print(f"  →  http://{ip}:{port}")
+    print("\n  In Cursor: open the PORTS tab → forward port 8080 → click the link")
+    print("  Updates every ~8s via WebSocket · Auto-scans every 90s\n")
 
 
 def main():

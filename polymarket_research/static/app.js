@@ -299,8 +299,7 @@ async function loadPortfolio() {
   }
 }
 
-async function runAction(path, msg, method = "POST", body = null) {
-  const btn = event?.target;
+async function runAction(path, msg, method = "POST", body = null, btn = null) {
   if (btn) btn.disabled = true;
   try {
     const data = await api(path, method, body);
@@ -313,15 +312,15 @@ async function runAction(path, msg, method = "POST", body = null) {
   }
 }
 
-$("btn-scan").onclick = () => runAction("/api/scan", "Scan complete");
-$("btn-prices").onclick = () => runAction("/api/prices", "Prices updated");
-$("btn-watchlist").onclick = () => runAction("/api/watchlist/refresh?fast=false", "Watchlist refreshed");
-$("btn-reset").onclick = () => {
+$("btn-scan").onclick = (e) => runAction("/api/scan", "Scan complete", "POST", null, e.target);
+$("btn-prices").onclick = (e) => runAction("/api/prices", "Prices updated", "POST", null, e.target);
+$("btn-watchlist").onclick = (e) => runAction("/api/watchlist/refresh?fast=false", "Watchlist refreshed", "POST", null, e.target);
+$("btn-reset").onclick = (e) => {
   if (confirm("Reset paper account to $1,000? All history will be cleared.")) {
-    runAction("/api/reset", "Account reset", "POST", { balance: 1000 });
+    runAction("/api/reset", "Account reset", "POST", { balance: 1000 }, e.target);
   }
 };
-$("btn-resume").onclick = () => runAction("/api/resume", "Trading resumed");
+$("btn-resume").onclick = (e) => runAction("/api/resume", "Trading resumed", "POST", null, e.target);
 
 $("auto-refresh").onchange = (e) => {
   if (e.target.checked) {

@@ -9,7 +9,7 @@ from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Query, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -32,17 +32,15 @@ class ResetRequest(BaseModel):
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    global portfolio, _scan_task
+    global portfolio, _scan_task, _live_task
     portfolio = PaperPortfolio()
     if not portfolio.state.watchlist:
         portfolio.refresh_watchlist(fast=True)
-    await asyncio.to_thread(portfolio.check_exits)
-    portfolio.update_prices()
-    portfolio._record_equity()
-    portfolio.save()
+    # Fast startup — run heavy checks in background
+    asyncio.create_task(_startup_tasks())
     _scan_task = asyncio.create_task(_auto_scan_loop())
     _live_task = asyncio.create_task(_live_push_loop())
-    log.info("Paper portfolio started — equity $%.2f", portfolio.get_snapshot()["totals"]["equity"])
+    log.info("Dashboard ready at http://0.0.0.0:8080")
     yield
     for task in (_scan_task, _live_task):
         if task:
@@ -51,6 +49,18 @@ async def lifespan(app: FastAPI):
                 await task
             except asyncio.CancelledError:
                 pass
+
+
+async def _startup_tasks():
+    try:
+        if portfolio:
+            await asyncio.to_thread(portfolio.check_exits)
+            portfolio.update_prices()
+            portfolio._record_equity()
+            portfolio.save()
+            log.info("Portfolio loaded — equity $%.2f", portfolio.get_snapshot(full=False)["totals"]["equity"])
+    except Exception:
+        log.exception("Startup portfolio init failed")
 
 
 async def _auto_scan_loop():
@@ -112,12 +122,55 @@ if STATIC_DIR.exists():
     app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
+def _build_dashboard_html() -> str:
+    """Single-file HTML with inlined CSS/JS — no external deps, instant render."""
+    index = (STATIC_DIR / "index.html").read_text()
+    css = (STATIC_DIR / "styles.css").read_text()
+    js = (STATIC_DIR / "app.js").read_text()
+    # Remove external stylesheet/script links and google fonts
+    index = index.replace('<link rel="stylesheet" href="/static/styles.css" />', f"<style>{css}</style>")
+    index = index.replace(
+        '<link rel="preconnect" href="https://fonts.googleapis.com" />\n  '
+        '<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />',
+        "",
+    )
+    index = index.replace('<script src="/static/app.js"></script>', f"<script>{js}</script>")
+    # Instant dark background before any JS
+    index = index.replace("<body>", '<body style="background:#0b0d12;color:#e8ecf4;margin:0">')
+    return index
+
+
+_dashboard_html_cache: str | None = None
+
+
+def _get_dashboard_html() -> str:
+    global _dashboard_html_cache
+    if _dashboard_html_cache is None:
+        _dashboard_html_cache = _build_dashboard_html()
+    return _dashboard_html_cache
+
+
 @app.get("/")
 async def index():
-    index_path = STATIC_DIR / "index.html"
-    if not index_path.exists():
-        raise HTTPException(404, "Dashboard UI not found")
-    return FileResponse(index_path)
+    return HTMLResponse(_get_dashboard_html(), headers={"Cache-Control": "no-cache"})
+
+
+@app.get("/api/info")
+async def api_info():
+    import socket
+    ips = []
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        ips.append(s.getsockname()[0])
+        s.close()
+    except Exception:
+        pass
+    return {
+        "status": "running",
+        "urls": [f"http://{ip}:8080" for ip in ips] + ["http://localhost:8080"],
+        "message": "Open one of these URLs in your browser (not about:blank)",
+    }
 
 
 @app.get("/api/health")
