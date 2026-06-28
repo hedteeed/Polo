@@ -6,8 +6,16 @@ Deep analysis of Polymarket leaderboard wallets, fees, backtests, and an automat
 
 ```bash
 pip install -r polymarket_research/requirements.txt
-python polymarket_research/run_research.py   # full research pipeline
-python -m polymarket_research.bot --cycles 1 # paper-trading scan
+
+# Paper trading dashboard (recommended)
+python polymarket_research/run_dashboard.py
+# Open http://localhost:8080
+
+# CLI research pipeline
+python polymarket_research/run_research.py
+
+# Headless paper bot
+python -m polymarket_research.bot --cycles 1
 ```
 
 ## Key finding
@@ -20,7 +28,11 @@ Full report: [polymarket_research/RESEARCH.md](polymarket_research/RESEARCH.md)
 
 ```
 polymarket_research/
-├── api_client.py      # Gamma / Data / CLOB API client
+├── paper_portfolio.py   # Paper trading engine (PNL, resolution, copy tracking)
+├── dashboard_server.py  # FastAPI + auto-scan every 90s
+├── run_dashboard.py     # Start UI: python polymarket_research/run_dashboard.py
+├── static/              # Dashboard UI (index.html, app.js, styles.css)
+├── api_client.py        # Gamma / Data / CLOB API client
 ├── fees.py            # Official fee model
 ├── wallet_analyzer.py # Leaderboard screening & strategy classification
 ├── backtest.py        # Historical strategy backtests

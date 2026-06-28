@@ -23,7 +23,7 @@ from pathlib import Path
 
 from .api_client import fetch_trades
 from .fees import compute_trade_fees, breakeven_edge_bps
-from .forward_test import ForwardTester
+from .paper_portfolio import PaperPortfolio
 from .wallet_analyzer import screen_copy_candidates
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -40,19 +40,19 @@ class BotConfig:
     copy_wallet_count: int = 5
     poll_interval_sec: int = 60
     paper_mode: bool = True
-    state_dir: Path = Path("data")
+    state_dir: Path = Path(__file__).resolve().parent / "data"
 
 
 class PolymarketBot:
     def __init__(self, config: BotConfig | None = None):
         self.config = config or BotConfig()
-        self.forward = ForwardTester(
+        self.forward = PaperPortfolio(
             starting_balance=self.config.starting_balance,
             position_pct=self.config.position_pct,
             max_positions=self.config.max_positions,
             min_conviction_price=self.config.min_conviction_price,
             max_conviction_price=self.config.max_conviction_price,
-            state_path=self.config.state_dir / "forward_test_state.json",
+            state_path=self.config.state_dir / "paper_portfolio.json",
         )
         self._live_client = None
 
@@ -79,7 +79,11 @@ class PolymarketBot:
 
     def refresh_watchlist(self) -> list[dict]:
         candidates = screen_copy_candidates(top_n=self.config.copy_wallet_count)
-        self.forward.state.watchlist_wallets = [c.address for c in candidates]
+        self.forward.state.watchlist = [
+            {"address": c.address, "username": c.username, "roi_pct": c.roi_pct,
+             "copy_score": c.copy_score, "strategy": c.strategy_label}
+            for c in candidates
+        ]
         self.forward.save()
         profiles = [c.__dict__ if hasattr(c, "__dict__") else c for c in candidates]
         out_path = self.config.state_dir / "watchlist.json"
@@ -120,16 +124,15 @@ class PolymarketBot:
         return self._live_client.create_and_post_order(args)
 
     def run_once(self) -> dict:
-        result = self.forward.run_scan_cycle()
+        result = self.forward.run_cycle()
+        snap = self.forward.get_snapshot()
         log.info(
-            "Cycle: balance=%.2f positions=%d copy_sigs=%d conviction_sigs=%d opened=%d",
-            result["balance"],
-            result["open_positions"],
-            result["copy_signals_found"],
-            result["conviction_signals_found"],
-            len(result["opened_this_cycle"]),
+            "Cycle: equity=%.2f positions=%d opened=%d",
+            snap["totals"]["equity"],
+            snap["totals"]["open_count"],
+            result.get("opened_count", 0),
         )
-        return result
+        return {**result, "portfolio": snap}
 
     def run_loop(self, max_cycles: int | None = None) -> None:
         cycles = 0

@@ -147,3 +147,22 @@ def fetch_spread(token_id: str) -> float | None:
     if not bids or not asks:
         return None
     return float(asks[0]["price"]) - float(bids[0]["price"])
+
+
+def fetch_midpoint(token_id: str) -> float | None:
+    try:
+        data = _get(f"{CLOB_URL}/midpoint", {"token_id": token_id})
+        mid = data.get("mid")
+        return float(mid) if mid is not None else None
+    except Exception:
+        return None
+
+
+def fetch_market_by_slug(slug: str) -> dict | None:
+    data = _get(f"{GAMMA_URL}/markets", {"slug": slug, "limit": 1})
+    return data[0] if data else None
+
+
+def fetch_market_by_condition(condition_id: str) -> dict | None:
+    data = _get(f"{GAMMA_URL}/markets", {"condition_id": condition_id, "limit": 1})
+    return data[0] if data else None

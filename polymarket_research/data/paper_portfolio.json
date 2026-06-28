@@ -1,0 +1,231 @@
+{
+  "version": 2,
+  "starting_balance": 1000.0,
+  "cash_balance": 847.2569,
+  "positions": [
+    {
+      "id": "a68bcd7a-a6c2-46ac-be2d-4883deacfd6f",
+      "market_slug": "fifwc-tur-usa-2026-06-25-usa",
+      "condition_id": "",
+      "token_id": "11351859697951031534193329704747483382789005872861046709981786676180376107985",
+      "title": "fifwc-tur-usa-2026-06-25-usa",
+      "outcome": "Yes",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": null,
+      "copy_username": null,
+      "signal_source": "copy_signal",
+      "entry_price": 0.48999999999876237,
+      "shares": 81.63265306143067,
+      "entry_fee": 0.612,
+      "cost_basis": 40.612,
+      "opened_at": "2026-06-28T03:29:10.777061+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.48999999999876237,
+      "unrealized_pnl": -1.224,
+      "market_value": 40.0,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    },
+    {
+      "id": "9756b7f6-8cec-4d41-9697-b6f004421674",
+      "market_slug": "fifwc-jpn-swe-2026-06-25-jpn",
+      "condition_id": "",
+      "token_id": "19056046558166616177125992986908450328347851423042233479789993394270100295648",
+      "title": "fifwc-jpn-swe-2026-06-25-jpn",
+      "outcome": "Yes",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": null,
+      "copy_username": null,
+      "signal_source": "copy_signal",
+      "entry_price": 0.4899999999772254,
+      "shares": 78.31738775874214,
+      "entry_fee": 0.58715,
+      "cost_basis": 38.96267,
+      "opened_at": "2026-06-28T03:29:10.777265+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.4899999999772254,
+      "unrealized_pnl": -1.1743,
+      "market_value": 38.3755,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    },
+    {
+      "id": "c0417d05",
+      "market_slug": "fifwc-ury-esp-2026-06-26-esp",
+      "condition_id": "0xe322faca2a534900680db54e3a4349a61427d347b6f906d2eeb01f81ae1b082c",
+      "token_id": "21212784061998732060753310583727616688784929823373352237868078199791664491531",
+      "title": "Will Spain win on 2026-06-26?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+      "copy_username": "DimSumConnoisseur.",
+      "signal_source": "copy_signal",
+      "entry_price": 0.58,
+      "shares": 63.477609,
+      "entry_fee": 0.46389,
+      "cost_basis": 37.2809,
+      "opened_at": "2026-06-28T03:49:05.583401+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.58,
+      "unrealized_pnl": -0.9278,
+      "market_value": 36.817,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    },
+    {
+      "id": "6ff5ac6b",
+      "market_slug": "fifwc-nor-fra-2026-06-26-goals-kylian-mbappe-gte1",
+      "condition_id": "0x16326fdefe05291e7fe07a8a5b76196cb0f84d9dad0dddf93dd459ede211a47e",
+      "token_id": "51049383047974134728404229684468494579901672838469475201678191511703940931638",
+      "title": "Kylian Mbapp\u00e9: 1+ goals",
+      "outcome": "No",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+      "copy_username": "DimSumConnoisseur.",
+      "signal_source": "copy_signal",
+      "entry_price": 0.47,
+      "shares": 75.161226,
+      "entry_fee": 0.56168,
+      "cost_basis": 35.8875,
+      "opened_at": "2026-06-28T03:49:05.596209+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.47,
+      "unrealized_pnl": -1.1234,
+      "market_value": 35.3258,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    }
+  ],
+  "closed_trades": [],
+  "watchlist": [
+    {
+      "address": "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0",
+      "username": ""
+    },
+    {
+      "address": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+      "username": ""
+    },
+    {
+      "address": "0x81da605d7dac06478367ed1bae0593b7791ca109",
+      "username": ""
+    },
+    {
+      "address": "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
+      "username": ""
+    },
+    {
+      "address": "0x5bdd63899629bcfa0375496df6fdc271c18dc4cb",
+      "username": ""
+    }
+  ],
+  "seen_signals": [
+    "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c:0xe322faca2a534900680db54e3a4349a61427d347b6f906d2eeb01f81ae1b082c",
+    "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c:0x16326fdefe05291e7fe07a8a5b76196cb0f84d9dad0dddf93dd459ede211a47e"
+  ],
+  "equity_history": [
+    {
+      "ts": "2026-06-28T03:48:38.314779+00:00",
+      "equity": 920.43,
+      "cash": 920.43
+    },
+    {
+      "ts": "2026-06-28T03:48:44.925247+00:00",
+      "equity": 920.43,
+      "cash": 920.43
+    },
+    {
+      "ts": "2026-06-28T03:48:58.778551+00:00",
+      "equity": 920.43,
+      "cash": 920.43
+    },
+    {
+      "ts": "2026-06-28T03:49:05.415350+00:00",
+      "equity": 920.43,
+      "cash": 920.43
+    },
+    {
+      "ts": "2026-06-28T03:49:18.853335+00:00",
+      "equity": 919.4,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:49:32.017560+00:00",
+      "equity": 919.4,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:50:19.185729+00:00",
+      "equity": 997.78,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:50:19.186207+00:00",
+      "equity": 997.78,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:50:32.439644+00:00",
+      "equity": 997.78,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:51:14.298912+00:00",
+      "equity": 997.78,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:52:15.755653+00:00",
+      "equity": 997.78,
+      "cash": 847.26
+    }
+  ],
+  "activity_log": [
+    {
+      "ts": "2026-06-28T03:49:05.596228+00:00",
+      "level": "info",
+      "message": "Opened Kylian Mbapp\u00e9: 1+ goals @ 0.470 | $35.89 | copy=DimSumConnoisseur.",
+      "position_id": "6ff5ac6b"
+    },
+    {
+      "ts": "2026-06-28T03:49:05.583421+00:00",
+      "level": "info",
+      "message": "Opened Will Spain win on 2026-06-26? @ 0.580 | $37.28 | copy=DimSumConnoisseur.",
+      "position_id": "c0417d05"
+    }
+  ],
+  "last_scan_at": "2026-06-28T03:49:05.596301+00:00",
+  "last_price_update_at": "2026-06-28T03:52:15.755630+00:00",
+  "paused": false,
+  "pause_reason": null,
+  "created_at": "2026-06-28T03:48:31.650941+00:00",
+  "updated_at": "2026-06-28T03:52:15.755657+00:00"
+}
