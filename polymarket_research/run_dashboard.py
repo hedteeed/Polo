@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Launch the Polo paper trading dashboard."""
+"""Launch the Polo paper trading dashboard — accessible on your network IP."""
 
 import argparse
 import logging
+import socket
 import sys
 from pathlib import Path
 
-# Ensure package import works when run as script
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import uvicorn
@@ -16,15 +16,40 @@ from polymarket_research.dashboard_server import app
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 
+def _local_ips() -> list[str]:
+    ips = []
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        ips.append(s.getsockname()[0])
+        s.close()
+    except Exception:
+        pass
+    return ips
+
+
+def _print_urls(host: str, port: int) -> None:
+    print("\n  ╔══════════════════════════════════════════════╗")
+    print("  ║       Polo Paper Trading — LIVE Dashboard      ║")
+    print("  ╚══════════════════════════════════════════════╝\n")
+    print(f"  Local:    http://localhost:{port}")
+    if host == "0.0.0.0":
+        for ip in _local_ips():
+            print(f"  Network:  http://{ip}:{port}")
+    else:
+        print(f"  Network:  http://{host}:{port}")
+    print(f"\n  WebSocket live stream: ws://<ip>:{port}/ws/live")
+    print("  Updates every ~8s · Auto-scans every 90s\n")
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Polo paper trading dashboard")
-    parser.add_argument("--host", default="0.0.0.0")
+    parser = argparse.ArgumentParser(description="Polo live paper trading dashboard")
+    parser.add_argument("--host", default="0.0.0.0", help="Bind address (0.0.0.0 = all interfaces)")
     parser.add_argument("--port", type=int, default=8080)
     parser.add_argument("--reload", action="store_true")
     args = parser.parse_args()
 
-    print(f"\n  Polo Paper Trading Dashboard")
-    print(f"  Open http://localhost:{args.port} in your browser\n")
+    _print_urls(args.host, args.port)
 
     uvicorn.run(
         app,

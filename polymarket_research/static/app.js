@@ -225,6 +225,70 @@ function drawEquityChart(history) {
 }
 
 let refreshTimer = null;
+let ws = null;
+let wsPingTimer = null;
+let wsReconnectTimer = null;
+
+function setWsStatus(state) {
+  const el = $("ws-status");
+  const labels = {
+    connecting: ["CONNECTING", "pill-connecting"],
+    connected: ["● LIVE", "pill-connected"],
+    disconnected: ["OFFLINE", "pill-disconnected"],
+  };
+  const [text, cls] = labels[state] || labels.disconnected;
+  el.textContent = text;
+  el.className = `pill ${cls}`;
+}
+
+function wsUrl() {
+  const proto = location.protocol === "https:" ? "wss:" : "ws:";
+  return `${proto}//${location.host}/ws/live`;
+}
+
+function connectWebSocket() {
+  if (!$("auto-refresh").checked) return;
+  if (ws && (ws.readyState === WebSocket.OPEN || ws.readyState === WebSocket.CONNECTING)) return;
+
+  setWsStatus("connecting");
+  ws = new WebSocket(wsUrl());
+
+  ws.onopen = () => {
+    setWsStatus("connected");
+    if (wsPingTimer) clearInterval(wsPingTimer);
+    wsPingTimer = setInterval(() => {
+      if (ws && ws.readyState === WebSocket.OPEN) ws.send("ping");
+    }, 20000);
+  };
+
+  ws.onmessage = (ev) => {
+    try {
+      const data = JSON.parse(ev.data);
+      if (data.totals) renderPortfolio(data);
+    } catch (_) {}
+  };
+
+  ws.onclose = () => {
+    setWsStatus("disconnected");
+    if (wsPingTimer) clearInterval(wsPingTimer);
+    ws = null;
+    if ($("auto-refresh").checked) {
+      wsReconnectTimer = setTimeout(connectWebSocket, 3000);
+    }
+  };
+
+  ws.onerror = () => {
+    ws?.close();
+  };
+}
+
+function disconnectWebSocket() {
+  if (wsReconnectTimer) clearTimeout(wsReconnectTimer);
+  if (wsPingTimer) clearInterval(wsPingTimer);
+  if (ws) ws.close();
+  ws = null;
+  setWsStatus("disconnected");
+}
 
 async function loadPortfolio() {
   try {
@@ -261,11 +325,15 @@ $("btn-resume").onclick = () => runAction("/api/resume", "Trading resumed");
 
 $("auto-refresh").onchange = (e) => {
   if (e.target.checked) {
-    refreshTimer = setInterval(loadPortfolio, 15000);
+    connectWebSocket();
   } else {
-    clearInterval(refreshTimer);
+    disconnectWebSocket();
   }
 };
 
 loadPortfolio();
-refreshTimer = setInterval(loadPortfolio, 15000);
+connectWebSocket();
+// HTTP fallback poll every 30s if WebSocket drops
+refreshTimer = setInterval(() => {
+  if (!ws || ws.readyState !== WebSocket.OPEN) loadPortfolio();
+}, 30000);

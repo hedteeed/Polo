@@ -674,9 +674,10 @@ class PaperPortfolio:
             "open_count": len(open_pos),
         }
 
-    def get_snapshot(self) -> dict:
-        """Full dashboard payload."""
-        self.check_exits()
+    def get_snapshot(self, *, full: bool = False) -> dict:
+        """Full dashboard payload. full=True runs exit checks (slower)."""
+        if full:
+            self.check_exits()
         self.update_prices()
         totals = self._compute_totals()
         open_pos = sorted(

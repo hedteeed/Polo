@@ -63,6 +63,14 @@ h2 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
 
 .pill-live { background: rgba(34, 197, 94, 0.15); color: var(--green); }
 .pill-paused { background: rgba(239, 68, 68, 0.15); color: var(--red); }
+.pill-connecting { background: rgba(245, 158, 11, 0.15); color: var(--amber); }
+.pill-connected { background: rgba(34, 197, 94, 0.15); color: var(--green); animation: pulse 2s infinite; }
+.pill-disconnected { background: rgba(239, 68, 68, 0.15); color: var(--red); }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
 
 .pause-banner {
   background: rgba(239, 68, 68, 0.12);
