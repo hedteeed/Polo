@@ -1,0 +1,41 @@
+{
+  "balance": 920.42533,
+  "positions": [
+    {
+      "market_slug": "fifwc-tur-usa-2026-06-25-usa",
+      "token_id": "11351859697951031534193329704747483382789005872861046709981786676180376107985",
+      "side": "BUY",
+      "entry_price": 0.48999999999876237,
+      "shares": 81.63265306143067,
+      "entry_fee": 0.612,
+      "cost_basis": 40.612,
+      "category": "SPORTS",
+      "opened_at": "2026-06-28T03:29:10.777061+00:00",
+      "signal_source": "copy_signal"
+    },
+    {
+      "market_slug": "fifwc-jpn-swe-2026-06-25-jpn",
+      "token_id": "19056046558166616177125992986908450328347851423042233479789993394270100295648",
+      "side": "BUY",
+      "entry_price": 0.4899999999772254,
+      "shares": 78.31738775874214,
+      "entry_fee": 0.58715,
+      "cost_basis": 38.96267,
+      "category": "SPORTS",
+      "opened_at": "2026-06-28T03:29:10.777265+00:00",
+      "signal_source": "copy_signal"
+    }
+  ],
+  "closed_trades": [],
+  "watchlist_wallets": [
+    "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0",
+    "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+    "0x81da605d7dac06478367ed1bae0593b7791ca109",
+    "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
+    "0x5bdd63899629bcfa0375496df6fdc271c18dc4cb"
+  ],
+  "last_updated": "2026-06-28T03:29:10.777415+00:00",
+  "starting_balance": 1000.0,
+  "pnl": -79.57,
+  "return_pct": -7.96
+}

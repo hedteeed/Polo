@@ -1,0 +1,233 @@
+[
+  {
+    "strategy": "high_conviction_yield",
+    "starting_balance": 1000.0,
+    "ending_balance": 1000.0,
+    "total_return_pct": 0.0,
+    "sharpe": 0.0,
+    "max_drawdown_pct": 0.0,
+    "trade_count": 0,
+    "win_rate": 0,
+    "total_fees": 0.0,
+    "markets_tested": 0,
+    "params": {
+      "min_price": 0.9,
+      "max_price": 0.97,
+      "position_pct": 0.04,
+      "category": "SPORTS"
+    },
+    "equity_curve": [
+      1000.0
+    ],
+    "trades": []
+  },
+  {
+    "strategy": "high_conviction_yield",
+    "starting_balance": 1000.0,
+    "ending_balance": 1005.26,
+    "total_return_pct": 0.53,
+    "sharpe": 29.43,
+    "max_drawdown_pct": 0.0,
+    "trade_count": 2,
+    "win_rate": 1.0,
+    "total_fees": 0.2,
+    "markets_tested": 2,
+    "params": {
+      "min_price": 0.9,
+      "max_price": 0.97,
+      "position_pct": 0.04,
+      "category": "POLITICS"
+    },
+    "equity_curve": [
+      1000.0,
+      1001.62,
+      1005.26
+    ],
+    "trades": [
+      {
+        "ts": 1730937603,
+        "side": "BUY",
+        "price": 0.9595,
+        "shares": 41.688379364252214,
+        "fee": 0.0648,
+        "market_slug": "will-donald-trump-be-inaugurated",
+        "reason": "high_conviction_yes@0.96"
+      },
+      {
+        "ts": 1759622406,
+        "side": "BUY",
+        "price": 0.914,
+        "shares": 43.834729950295504,
+        "fee": 0.13782,
+        "market_slug": "will-zohran-mamdani-win-the-2025-nyc-mayoral-election",
+        "reason": "high_conviction_yes@0.91"
+      }
+    ]
+  },
+  {
+    "strategy": "momentum",
+    "starting_balance": 1000.0,
+    "ending_balance": 1048.09,
+    "total_return_pct": 4.81,
+    "sharpe": 4.29,
+    "max_drawdown_pct": 4.21,
+    "trade_count": 2,
+    "win_rate": 0.5,
+    "total_fees": 3.47,
+    "markets_tested": 2,
+    "params": {
+      "lookback": 24,
+      "threshold": 0.05,
+      "hold": 48,
+      "position_pct": 0.04
+    },
+    "equity_curve": [
+      1000.0,
+      957.88,
+      1048.09
+    ],
+    "trades": [
+      {
+        "ts": 1780027207,
+        "side": "BUY",
+        "price": 0.2415,
+        "shares": 165.63146997929607,
+        "fee": 2.1238,
+        "market_slug": "microstrategy-sells-any-bitcoin-by-may-31-2026",
+        "reason": "mom=1.60"
+      },
+      {
+        "ts": 1780038007,
+        "side": "BUY",
+        "price": 0.295,
+        "shares": 129.88151864406782,
+        "fee": 1.35061,
+        "market_slug": "us-x-iran-permanent-peace-deal-by-june-15-2026-734-856-129",
+        "reason": "mom=0.07"
+      }
+    ]
+  },
+  {
+    "strategy": "mean_reversion",
+    "starting_balance": 1000.0,
+    "ending_balance": 1043.4,
+    "total_return_pct": 4.34,
+    "sharpe": 4.01,
+    "max_drawdown_pct": 4.25,
+    "trade_count": 2,
+    "win_rate": 0.5,
+    "total_fees": 3.87,
+    "markets_tested": 2,
+    "params": {
+      "deviation": 0.08,
+      "position_pct": 0.04
+    },
+    "equity_curve": [
+      1000.0,
+      957.46,
+      1043.4
+    ],
+    "trades": [
+      {
+        "ts": 1779940807,
+        "side": "BUY",
+        "price": 0.093,
+        "shares": 430.10752688172045,
+        "fee": 2.5396,
+        "market_slug": "microstrategy-sells-any-bitcoin-by-may-31-2026",
+        "reason": "mean_reversion"
+      },
+      {
+        "ts": 1779940807,
+        "side": "BUY",
+        "price": 0.305,
+        "shares": 125.56857704918033,
+        "fee": 1.33087,
+        "market_slug": "us-x-iran-permanent-peace-deal-by-june-15-2026-734-856-129",
+        "reason": "mean_reversion"
+      }
+    ]
+  },
+  {
+    "strategy": "maker_spread_sim",
+    "starting_balance": 1000.0,
+    "ending_balance": 1015.24,
+    "total_return_pct": 1.52,
+    "sharpe": 73.41,
+    "max_drawdown_pct": 0.0,
+    "trade_count": 6,
+    "win_rate": 1.0,
+    "total_fees": -1.73,
+    "markets_tested": 6,
+    "params": {
+      "spread_capture": 0.02,
+      "position_pct": 0.03,
+      "fills_per_market": 3
+    },
+    "equity_curve": [
+      1000.0,
+      1003.49,
+      1006.3,
+      1008.27,
+      1010.59,
+      1012.91,
+      1015.24
+    ],
+    "trades": [
+      {
+        "ts": 1780023609,
+        "side": "MAKER",
+        "price": 0.1905,
+        "shares": 157.48031496062993,
+        "fee": -0.33999,
+        "market_slug": "microstrategy-sells-any-bitcoin-by-may-31-2026",
+        "reason": "spread_capture"
+      },
+      {
+        "ts": 1780027207,
+        "side": "MAKER",
+        "price": 0.2415,
+        "shares": 124.65709270797673,
+        "fee": -0.31968,
+        "market_slug": "microstrategy-sells-any-bitcoin-by-may-31-2026",
+        "reason": "spread_capture"
+      },
+      {
+        "ts": 1780030808,
+        "side": "MAKER",
+        "price": 0.3565,
+        "shares": 84.68183041963862,
+        "fee": -0.27197,
+        "market_slug": "microstrategy-sells-any-bitcoin-by-may-31-2026",
+        "reason": "spread_capture"
+      },
+      {
+        "ts": 1779958811,
+        "side": "MAKER",
+        "price": 0.295,
+        "shares": 102.53573133170492,
+        "fee": -0.26656,
+        "market_slug": "us-x-iran-permanent-peace-deal-by-june-15-2026-734-856-129",
+        "reason": "spread_capture"
+      },
+      {
+        "ts": 1779962406,
+        "side": "MAKER",
+        "price": 0.295,
+        "shares": 102.77138637848127,
+        "fee": -0.26717,
+        "market_slug": "us-x-iran-permanent-peace-deal-by-june-15-2026-734-856-129",
+        "reason": "spread_capture"
+      },
+      {
+        "ts": 1779966006,
+        "side": "MAKER",
+        "price": 0.295,
+        "shares": 103.00758275755615,
+        "fee": -0.26779,
+        "market_slug": "us-x-iran-permanent-peace-deal-by-june-15-2026-734-856-129",
+        "reason": "spread_capture"
+      }
+    ]
+  }
+]

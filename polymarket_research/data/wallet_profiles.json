@@ -1,0 +1,227 @@
+{
+  "generated_at": "2026-06-28T03:29:02.620855+00:00",
+  "profiles": [
+    {
+      "address": "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0",
+      "username": "skyblue77",
+      "leaderboard_pnl": 1839104.9443646525,
+      "leaderboard_vol": 4938242.256860999,
+      "roi_pct": 37.24,
+      "trade_count": 80,
+      "buy_pct": 1.0,
+      "avg_trade_usdc": 29154.28,
+      "median_trade_usdc": 9611.39,
+      "avg_entry_price": 0.491,
+      "price_bucket_dist": {
+        "mid": 1.0
+      },
+      "category_dist": {
+        "SPORTS": 1.0
+      },
+      "unique_markets": 19,
+      "avg_hold_hours": null,
+      "win_rate_closed": 1.0,
+      "avg_closed_pnl_pct": 102.89,
+      "strategy_label": "sports_accumulator",
+      "copy_score": 99.79
+    },
+    {
+      "address": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+      "username": "DimSumConnoisseur.",
+      "leaderboard_pnl": 458601.7555373941,
+      "leaderboard_vol": 1135185.843756,
+      "roi_pct": 40.4,
+      "trade_count": 48,
+      "buy_pct": 1.0,
+      "avg_trade_usdc": 14110.66,
+      "median_trade_usdc": 994.15,
+      "avg_entry_price": 0.483,
+      "price_bucket_dist": {
+        "mid": 0.542,
+        "extreme_low": 0.104,
+        "high": 0.062,
+        "low": 0.167,
+        "extreme_high": 0.125
+      },
+      "category_dist": {
+        "SPORTS": 0.708,
+        "OTHER": 0.292
+      },
+      "unique_markets": 30,
+      "avg_hold_hours": null,
+      "win_rate_closed": 0.905,
+      "avg_closed_pnl_pct": 71.91,
+      "strategy_label": "sports_accumulator",
+      "copy_score": 98.51
+    },
+    {
+      "address": "0x81da605d7dac06478367ed1bae0593b7791ca109",
+      "username": "gardenshed",
+      "leaderboard_pnl": 1282152.1889502972,
+      "leaderboard_vol": 3768550.5288299997,
+      "roi_pct": 34.02,
+      "trade_count": 67,
+      "buy_pct": 1.0,
+      "avg_trade_usdc": 12919.22,
+      "median_trade_usdc": 9400.0,
+      "avg_entry_price": 0.443,
+      "price_bucket_dist": {
+        "mid": 0.821,
+        "low": 0.179
+      },
+      "category_dist": {
+        "SPORTS": 1.0
+      },
+      "unique_markets": 17,
+      "avg_hold_hours": null,
+      "win_rate_closed": 1.0,
+      "avg_closed_pnl_pct": 114.35,
+      "strategy_label": "sports_accumulator",
+      "copy_score": 97.22
+    },
+    {
+      "address": "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
+      "username": "Soarin22",
+      "leaderboard_pnl": 619368.9484718598,
+      "leaderboard_vol": 2640886.672297,
+      "roi_pct": 23.45,
+      "trade_count": 300,
+      "buy_pct": 0.993,
+      "avg_trade_usdc": 7884.97,
+      "median_trade_usdc": 2538.36,
+      "avg_entry_price": 0.503,
+      "price_bucket_dist": {
+        "high": 0.1,
+        "low": 0.13,
+        "mid": 0.637,
+        "extreme_low": 0.053,
+        "extreme_high": 0.08
+      },
+      "category_dist": {
+        "SPORTS": 0.953,
+        "OTHER": 0.047
+      },
+      "unique_markets": 190,
+      "avg_hold_hours": null,
+      "win_rate_closed": 1.0,
+      "avg_closed_pnl_pct": 201.35,
+      "strategy_label": "sports_accumulator",
+      "copy_score": 88.76
+    },
+    {
+      "address": "0x5bdd63899629bcfa0375496df6fdc271c18dc4cb",
+      "username": "tussss1881",
+      "leaderboard_pnl": 428051.46983243,
+      "leaderboard_vol": 1220690.464029,
+      "roi_pct": 35.07,
+      "trade_count": 8,
+      "buy_pct": 1.0,
+      "avg_trade_usdc": 19830.74,
+      "median_trade_usdc": 13737.48,
+      "avg_entry_price": 0.5,
+      "price_bucket_dist": {
+        "mid": 1.0
+      },
+      "category_dist": {
+        "SPORTS": 1.0
+      },
+      "unique_markets": 4,
+      "avg_hold_hours": null,
+      "win_rate_closed": 1.0,
+      "avg_closed_pnl_pct": 97.2,
+      "strategy_label": "sports_accumulator",
+      "copy_score": 88.05
+    },
+    {
+      "address": "0x58483a07148bf1c4ddc4a1f0c0ea8daeb9e8a698",
+      "username": "Badgeroff",
+      "leaderboard_pnl": 692857.5216683862,
+      "leaderboard_vol": 3222958.021474,
+      "roi_pct": 21.5,
+      "trade_count": 27,
+      "buy_pct": 1.0,
+      "avg_trade_usdc": 29351.66,
+      "median_trade_usdc": 9849.47,
+      "avg_entry_price": 0.502,
+      "price_bucket_dist": {
+        "mid": 0.704,
+        "high": 0.148,
+        "low": 0.148
+      },
+      "category_dist": {
+        "SPORTS": 1.0
+      },
+      "unique_markets": 16,
+      "avg_hold_hours": null,
+      "win_rate_closed": 1.0,
+      "avg_closed_pnl_pct": 109.57,
+      "strategy_label": "sports_accumulator",
+      "copy_score": 87.2
+    },
+    {
+      "address": "0xce5bec63b40392845a9a504915f607c8e03a047a",
+      "username": "Nexuus",
+      "leaderboard_pnl": 859469.7575301027,
+      "leaderboard_vol": 1054582.6800000002,
+      "roi_pct": 81.5,
+      "trade_count": 300,
+      "buy_pct": 0.317,
+      "avg_trade_usdc": 12043.46,
+      "median_trade_usdc": 6632.25,
+      "avg_entry_price": 0.603,
+      "price_bucket_dist": {
+        "extreme_high": 0.537,
+        "extreme_low": 0.33,
+        "low": 0.05,
+        "mid": 0.03,
+        "high": 0.053
+      },
+      "category_dist": {
+        "CRYPTO": 0.013,
+        "OTHER": 0.26,
+        "TECH": 0.013,
+        "FINANCE": 0.51,
+        "POLITICS": 0.203
+      },
+      "unique_markets": 72,
+      "avg_hold_hours": null,
+      "win_rate_closed": 0.76,
+      "avg_closed_pnl_pct": 46.01,
+      "strategy_label": "specialist_finance",
+      "copy_score": 85.4
+    },
+    {
+      "address": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
+      "username": "Wickier",
+      "leaderboard_pnl": 566652.3981826717,
+      "leaderboard_vol": 1449445.6004279996,
+      "roi_pct": 39.09,
+      "trade_count": 300,
+      "buy_pct": 0.76,
+      "avg_trade_usdc": 6025.91,
+      "median_trade_usdc": 1532.11,
+      "avg_entry_price": 0.379,
+      "price_bucket_dist": {
+        "high": 0.087,
+        "extreme_low": 0.327,
+        "extreme_high": 0.187,
+        "low": 0.287,
+        "mid": 0.113
+      },
+      "category_dist": {
+        "OTHER": 0.5,
+        "POLITICS": 0.207,
+        "TECH": 0.117,
+        "FINANCE": 0.05,
+        "SPORTS": 0.12,
+        "CRYPTO": 0.007
+      },
+      "unique_markets": 93,
+      "avg_hold_hours": null,
+      "win_rate_closed": 0.96,
+      "avg_closed_pnl_pct": 250.67,
+      "strategy_label": "mixed_directional",
+      "copy_score": 84.68
+    }
+  ]
+}

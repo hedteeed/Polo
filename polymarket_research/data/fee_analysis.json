@@ -1,0 +1,206 @@
+{
+  "SPORTS": [
+    {
+      "price": 0.05,
+      "notional": 5.0,
+      "taker_fee": 0.1425,
+      "fee_pct": 2.8499999999999996,
+      "breakeven_edge_pts": 0.28500000000000003
+    },
+    {
+      "price": 0.1,
+      "notional": 10.0,
+      "taker_fee": 0.27,
+      "fee_pct": 2.7,
+      "breakeven_edge_pts": 0.54
+    },
+    {
+      "price": 0.25,
+      "notional": 25.0,
+      "taker_fee": 0.5625,
+      "fee_pct": 2.25,
+      "breakeven_edge_pts": 1.125
+    },
+    {
+      "price": 0.5,
+      "notional": 50.0,
+      "taker_fee": 0.75,
+      "fee_pct": 1.5,
+      "breakeven_edge_pts": 1.5
+    },
+    {
+      "price": 0.75,
+      "notional": 75.0,
+      "taker_fee": 0.5625,
+      "fee_pct": 0.75,
+      "breakeven_edge_pts": 1.125
+    },
+    {
+      "price": 0.9,
+      "notional": 90.0,
+      "taker_fee": 0.27,
+      "fee_pct": 0.3,
+      "breakeven_edge_pts": 0.5399999999999998
+    },
+    {
+      "price": 0.95,
+      "notional": 95.0,
+      "taker_fee": 0.1425,
+      "fee_pct": 0.15,
+      "breakeven_edge_pts": 0.28500000000000025
+    }
+  ],
+  "POLITICS": [
+    {
+      "price": 0.05,
+      "notional": 5.0,
+      "taker_fee": 0.19,
+      "fee_pct": 3.8,
+      "breakeven_edge_pts": 0.38
+    },
+    {
+      "price": 0.1,
+      "notional": 10.0,
+      "taker_fee": 0.36,
+      "fee_pct": 3.5999999999999996,
+      "breakeven_edge_pts": 0.7200000000000001
+    },
+    {
+      "price": 0.25,
+      "notional": 25.0,
+      "taker_fee": 0.75,
+      "fee_pct": 3.0,
+      "breakeven_edge_pts": 1.5
+    },
+    {
+      "price": 0.5,
+      "notional": 50.0,
+      "taker_fee": 1.0,
+      "fee_pct": 2.0,
+      "breakeven_edge_pts": 2.0
+    },
+    {
+      "price": 0.75,
+      "notional": 75.0,
+      "taker_fee": 0.75,
+      "fee_pct": 1.0,
+      "breakeven_edge_pts": 1.5
+    },
+    {
+      "price": 0.9,
+      "notional": 90.0,
+      "taker_fee": 0.36,
+      "fee_pct": 0.4,
+      "breakeven_edge_pts": 0.7199999999999999
+    },
+    {
+      "price": 0.95,
+      "notional": 95.0,
+      "taker_fee": 0.19,
+      "fee_pct": 0.2,
+      "breakeven_edge_pts": 0.38000000000000034
+    }
+  ],
+  "CRYPTO": [
+    {
+      "price": 0.05,
+      "notional": 5.0,
+      "taker_fee": 0.3325,
+      "fee_pct": 6.65,
+      "breakeven_edge_pts": 0.665
+    },
+    {
+      "price": 0.1,
+      "notional": 10.0,
+      "taker_fee": 0.63,
+      "fee_pct": 6.3,
+      "breakeven_edge_pts": 1.2600000000000002
+    },
+    {
+      "price": 0.25,
+      "notional": 25.0,
+      "taker_fee": 1.3125,
+      "fee_pct": 5.25,
+      "breakeven_edge_pts": 2.6250000000000004
+    },
+    {
+      "price": 0.5,
+      "notional": 50.0,
+      "taker_fee": 1.75,
+      "fee_pct": 3.5000000000000004,
+      "breakeven_edge_pts": 3.5000000000000004
+    },
+    {
+      "price": 0.75,
+      "notional": 75.0,
+      "taker_fee": 1.3125,
+      "fee_pct": 1.7500000000000002,
+      "breakeven_edge_pts": 2.6250000000000004
+    },
+    {
+      "price": 0.9,
+      "notional": 90.0,
+      "taker_fee": 0.63,
+      "fee_pct": 0.7000000000000001,
+      "breakeven_edge_pts": 1.26
+    },
+    {
+      "price": 0.95,
+      "notional": 95.0,
+      "taker_fee": 0.3325,
+      "fee_pct": 0.35000000000000003,
+      "breakeven_edge_pts": 0.6650000000000007
+    }
+  ],
+  "GEOPOLITICS": [
+    {
+      "price": 0.05,
+      "notional": 5.0,
+      "taker_fee": 0.0,
+      "fee_pct": 0.0,
+      "breakeven_edge_pts": 0.0
+    },
+    {
+      "price": 0.1,
+      "notional": 10.0,
+      "taker_fee": 0.0,
+      "fee_pct": 0.0,
+      "breakeven_edge_pts": 0.0
+    },
+    {
+      "price": 0.25,
+      "notional": 25.0,
+      "taker_fee": 0.0,
+      "fee_pct": 0.0,
+      "breakeven_edge_pts": 0.0
+    },
+    {
+      "price": 0.5,
+      "notional": 50.0,
+      "taker_fee": 0.0,
+      "fee_pct": 0.0,
+      "breakeven_edge_pts": 0.0
+    },
+    {
+      "price": 0.75,
+      "notional": 75.0,
+      "taker_fee": 0.0,
+      "fee_pct": 0.0,
+      "breakeven_edge_pts": 0.0
+    },
+    {
+      "price": 0.9,
+      "notional": 90.0,
+      "taker_fee": 0.0,
+      "fee_pct": 0.0,
+      "breakeven_edge_pts": 0.0
+    },
+    {
+      "price": 0.95,
+      "notional": 95.0,
+      "taker_fee": 0.0,
+      "fee_pct": 0.0,
+      "breakeven_edge_pts": 0.0
+    }
+  ]
+}
