@@ -1,0 +1,594 @@
+{
+  "version": 2,
+  "starting_balance": 1000.0,
+  "cash_balance": 717.7804,
+  "positions": [
+    {
+      "id": "a68bcd7a-a6c2-46ac-be2d-4883deacfd6f",
+      "market_slug": "fifwc-tur-usa-2026-06-25-usa",
+      "condition_id": "",
+      "token_id": "11351859697951031534193329704747483382789005872861046709981786676180376107985",
+      "title": "fifwc-tur-usa-2026-06-25-usa",
+      "outcome": "Yes",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": null,
+      "copy_username": null,
+      "signal_source": "copy_signal",
+      "entry_price": 0.48999999999876237,
+      "shares": 81.63265306143067,
+      "entry_fee": 0.612,
+      "cost_basis": 40.612,
+      "opened_at": "2026-06-28T03:29:10.777061+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.48999999999876237,
+      "unrealized_pnl": -1.224,
+      "market_value": 40.0,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    },
+    {
+      "id": "9756b7f6-8cec-4d41-9697-b6f004421674",
+      "market_slug": "fifwc-jpn-swe-2026-06-25-jpn",
+      "condition_id": "",
+      "token_id": "19056046558166616177125992986908450328347851423042233479789993394270100295648",
+      "title": "fifwc-jpn-swe-2026-06-25-jpn",
+      "outcome": "Yes",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": null,
+      "copy_username": null,
+      "signal_source": "copy_signal",
+      "entry_price": 0.4899999999772254,
+      "shares": 78.31738775874214,
+      "entry_fee": 0.58715,
+      "cost_basis": 38.96267,
+      "opened_at": "2026-06-28T03:29:10.777265+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.4899999999772254,
+      "unrealized_pnl": -1.1743,
+      "market_value": 38.3755,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    },
+    {
+      "id": "c0417d05",
+      "market_slug": "fifwc-ury-esp-2026-06-26-esp",
+      "condition_id": "0xe322faca2a534900680db54e3a4349a61427d347b6f906d2eeb01f81ae1b082c",
+      "token_id": "21212784061998732060753310583727616688784929823373352237868078199791664491531",
+      "title": "Will Spain win on 2026-06-26?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+      "copy_username": "DimSumConnoisseur.",
+      "signal_source": "copy_signal",
+      "entry_price": 0.58,
+      "shares": 63.477609,
+      "entry_fee": 0.46389,
+      "cost_basis": 37.2809,
+      "opened_at": "2026-06-28T03:49:05.583401+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.58,
+      "unrealized_pnl": -0.9278,
+      "market_value": 36.817,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    },
+    {
+      "id": "6ff5ac6b",
+      "market_slug": "fifwc-nor-fra-2026-06-26-goals-kylian-mbappe-gte1",
+      "condition_id": "0x16326fdefe05291e7fe07a8a5b76196cb0f84d9dad0dddf93dd459ede211a47e",
+      "token_id": "51049383047974134728404229684468494579901672838469475201678191511703940931638",
+      "title": "Kylian Mbapp\u00e9: 1+ goals",
+      "outcome": "No",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+      "copy_username": "DimSumConnoisseur.",
+      "signal_source": "copy_signal",
+      "entry_price": 0.47,
+      "shares": 75.161226,
+      "entry_fee": 0.56168,
+      "cost_basis": 35.8875,
+      "opened_at": "2026-06-28T03:49:05.596209+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.47,
+      "unrealized_pnl": -1.1234,
+      "market_value": 35.3258,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    },
+    {
+      "id": "43c871da",
+      "market_slug": "fifwc-ecu-ger-2026-06-25-goals-deniz-undav-gte1",
+      "condition_id": "0x99f269cbb7c1f7b7cbc5fd66646219c4b4dddd9fe667c3065266d312f036f1bf",
+      "token_id": "85194782262203048758873245571303549838859794077932450043663544224874030091295",
+      "title": "Deniz Undav: 1+ goals",
+      "outcome": "No",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+      "copy_username": "DimSumConnoisseur.",
+      "signal_source": "copy_signal",
+      "entry_price": 0.64,
+      "shares": 52.953556,
+      "entry_fee": 0.36601,
+      "cost_basis": 34.2563,
+      "opened_at": "2026-06-28T03:52:15.904805+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.64,
+      "unrealized_pnl": -0.732,
+      "market_value": 33.8903,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    },
+    {
+      "id": "27264f65",
+      "market_slug": "mlb-phi-wsh-2026-06-25",
+      "condition_id": "0xb735d67ec0d26547a913e3d29e3336c32b750d21808aa4d9179f3ba1c0e7034b",
+      "token_id": "53067379858160297833205053629610183865795034007118160120271484662096007346109",
+      "title": "Philadelphia Phillies vs. Washington Nationals",
+      "outcome": "Washington Nationals",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0",
+      "copy_username": "skyblue77",
+      "signal_source": "copy_signal",
+      "entry_price": 0.38,
+      "shares": 85.579011,
+      "entry_fee": 0.60487,
+      "cost_basis": 33.1249,
+      "opened_at": "2026-06-28T03:52:15.917544+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.38,
+      "unrealized_pnl": -1.2097,
+      "market_value": 32.52,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    },
+    {
+      "id": "e195f153",
+      "market_slug": "mlb-hou-det-2026-06-25-total-8pt5",
+      "condition_id": "0xf0b5ae5fb18ce33b4f3e0b975027836b777c9d49cc234f69a01fb36bcae91c69",
+      "token_id": "20735201297147320682760143039858218241842880609250778414343402828024545454516",
+      "title": "Houston Astros vs. Detroit Tigers: O/U 8.5",
+      "outcome": "Under",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0",
+      "copy_username": "skyblue77",
+      "signal_source": "copy_signal",
+      "entry_price": 0.488873143,
+      "shares": 63.810067,
+      "entry_fee": 0.47834,
+      "cost_basis": 31.6734,
+      "opened_at": "2026-06-28T03:54:26.778741+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.488873143,
+      "unrealized_pnl": -0.9567,
+      "market_value": 31.195,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    },
+    {
+      "id": "c6705bfe",
+      "market_slug": "mlb-oak-sf-2026-06-25",
+      "condition_id": "0x7122b57616861c549463d47ea07d747118450bcff2c3aa4deaeaf7703c8f01e9",
+      "token_id": "111834923188380144988163987284705211672844928708439365426956469469406088757296",
+      "title": "Athletics vs. San Francisco Giants",
+      "outcome": "Athletics",
+      "side": "BUY",
+      "category": "SPORTS",
+      "copy_wallet": "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0",
+      "copy_username": "skyblue77",
+      "signal_source": "copy_signal",
+      "entry_price": 0.45,
+      "shares": 66.506871,
+      "entry_fee": 0.49381,
+      "cost_basis": 30.4219,
+      "opened_at": "2026-06-28T03:54:26.792985+00:00",
+      "resolution_date": null,
+      "stop_loss_pct": 0.5,
+      "status": "OPEN",
+      "current_price": 0.45,
+      "unrealized_pnl": -0.9876,
+      "market_value": 29.9281,
+      "closed_at": null,
+      "exit_price": null,
+      "exit_fee": null,
+      "realized_pnl": null,
+      "close_reason": null,
+      "hours_to_resolution": null
+    }
+  ],
+  "closed_trades": [],
+  "watchlist": [
+    {
+      "address": "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0",
+      "username": ""
+    },
+    {
+      "address": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+      "username": ""
+    },
+    {
+      "address": "0x81da605d7dac06478367ed1bae0593b7791ca109",
+      "username": ""
+    },
+    {
+      "address": "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
+      "username": ""
+    },
+    {
+      "address": "0x5bdd63899629bcfa0375496df6fdc271c18dc4cb",
+      "username": ""
+    }
+  ],
+  "seen_signals": [
+    "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c:0xe322faca2a534900680db54e3a4349a61427d347b6f906d2eeb01f81ae1b082c",
+    "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c:0x16326fdefe05291e7fe07a8a5b76196cb0f84d9dad0dddf93dd459ede211a47e",
+    "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c:0x99f269cbb7c1f7b7cbc5fd66646219c4b4dddd9fe667c3065266d312f036f1bf",
+    "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0:0xb735d67ec0d26547a913e3d29e3336c32b750d21808aa4d9179f3ba1c0e7034b",
+    "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0:0xf0b5ae5fb18ce33b4f3e0b975027836b777c9d49cc234f69a01fb36bcae91c69",
+    "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0:0x7122b57616861c549463d47ea07d747118450bcff2c3aa4deaeaf7703c8f01e9"
+  ],
+  "equity_history": [
+    {
+      "ts": "2026-06-28T03:48:38.314779+00:00",
+      "equity": 920.43,
+      "cash": 920.43
+    },
+    {
+      "ts": "2026-06-28T03:48:44.925247+00:00",
+      "equity": 920.43,
+      "cash": 920.43
+    },
+    {
+      "ts": "2026-06-28T03:48:58.778551+00:00",
+      "equity": 920.43,
+      "cash": 920.43
+    },
+    {
+      "ts": "2026-06-28T03:49:05.415350+00:00",
+      "equity": 920.43,
+      "cash": 920.43
+    },
+    {
+      "ts": "2026-06-28T03:49:18.853335+00:00",
+      "equity": 919.4,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:49:32.017560+00:00",
+      "equity": 919.4,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:50:19.185729+00:00",
+      "equity": 997.78,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:50:19.186207+00:00",
+      "equity": 997.78,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:50:32.439644+00:00",
+      "equity": 997.78,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:51:14.298912+00:00",
+      "equity": 997.78,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:52:15.755653+00:00",
+      "equity": 997.78,
+      "cash": 847.26
+    },
+    {
+      "ts": "2026-06-28T03:52:35.772959+00:00",
+      "equity": 996.8,
+      "cash": 779.88
+    },
+    {
+      "ts": "2026-06-28T03:54:25.830418+00:00",
+      "equity": 996.8,
+      "cash": 779.88
+    },
+    {
+      "ts": "2026-06-28T03:54:53.253768+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:20:24.059915+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:20:51.989485+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:22:03.995231+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:22:03.995994+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:22:30.552309+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:23:07.767905+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:23:13.169851+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:23:49.818464+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:23:49.819323+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:24:16.283211+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:25:01.459471+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:25:01.460478+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:25:28.282343+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:25:59.682171+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:26:02.784821+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:27:24.925512+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:27:58.270747+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:29:54.771029+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:30:23.391109+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:32:20.068530+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:32:48.355514+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:34:44.837384+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:35:17.081140+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:37:13.575803+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:37:42.048862+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:39:38.641870+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:40:07.151121+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:42:03.637238+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:42:35.869083+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:44:32.557377+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:45:01.422336+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:46:58.234801+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:47:28.011445+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:49:24.502526+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:49:55.431226+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:51:51.950904+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:52:21.265866+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:53:02.653780+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:53:02.654693+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    },
+    {
+      "ts": "2026-06-28T05:53:29.036167+00:00",
+      "equity": 995.83,
+      "cash": 717.78
+    }
+  ],
+  "activity_log": [
+    {
+      "ts": "2026-06-28T03:54:26.793004+00:00",
+      "level": "info",
+      "message": "Opened Athletics vs. San Francisco Giants @ 0.450 | $30.42 | copy=skyblue77",
+      "position_id": "c6705bfe"
+    },
+    {
+      "ts": "2026-06-28T03:54:26.778796+00:00",
+      "level": "info",
+      "message": "Opened Houston Astros vs. Detroit Tigers: O/U 8 @ 0.489 | $31.67 | copy=skyblue77",
+      "position_id": "e195f153"
+    },
+    {
+      "ts": "2026-06-28T03:52:15.917562+00:00",
+      "level": "info",
+      "message": "Opened Philadelphia Phillies vs. Washington Nat @ 0.380 | $33.12 | copy=skyblue77",
+      "position_id": "27264f65"
+    },
+    {
+      "ts": "2026-06-28T03:52:15.904827+00:00",
+      "level": "info",
+      "message": "Opened Deniz Undav: 1+ goals @ 0.640 | $34.26 | copy=DimSumConnoisseur.",
+      "position_id": "43c871da"
+    },
+    {
+      "ts": "2026-06-28T03:49:05.596228+00:00",
+      "level": "info",
+      "message": "Opened Kylian Mbapp\u00e9: 1+ goals @ 0.470 | $35.89 | copy=DimSumConnoisseur.",
+      "position_id": "6ff5ac6b"
+    },
+    {
+      "ts": "2026-06-28T03:49:05.583421+00:00",
+      "level": "info",
+      "message": "Opened Will Spain win on 2026-06-26? @ 0.580 | $37.28 | copy=DimSumConnoisseur.",
+      "position_id": "c0417d05"
+    }
+  ],
+  "last_scan_at": "2026-06-28T05:51:54.885235+00:00",
+  "last_price_update_at": "2026-06-28T05:53:29.036140+00:00",
+  "paused": false,
+  "pause_reason": null,
+  "created_at": "2026-06-28T03:48:31.650941+00:00",
+  "updated_at": "2026-06-28T05:53:29.036171+00:00"
+}

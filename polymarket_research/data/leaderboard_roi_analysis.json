@@ -1,0 +1,262 @@
+{
+  "stats": {
+    "pnl_leader_avg_roi": 34.63,
+    "vol_leader_avg_roi": 2.13,
+    "mid_tier_count": 11,
+    "mid_tier_avg_roi": 33.07
+  },
+  "pnl_leaders": [
+    {
+      "rank": "1",
+      "username": "mintblade",
+      "address": "0x96cfcb0c30942cfcd1cdf76c7d408794d66b1acb",
+      "pnl": 9238344.623225637,
+      "vol": 17759922.232853003,
+      "roi_pct": 52.02
+    },
+    {
+      "rank": "2",
+      "username": "fishalive",
+      "address": "0xed64a7bf029040aa331abc87902434d815ef217d",
+      "pnl": 9063378.17620066,
+      "vol": 13281460.374668,
+      "roi_pct": 68.24
+    },
+    {
+      "rank": "3",
+      "username": "frostrizz",
+      "address": "0xbc11a64ab34a03a043fbe80598fa065ee87eeec6",
+      "pnl": 8928561.117991824,
+      "vol": 23091318.155748,
+      "roi_pct": 38.67
+    },
+    {
+      "rank": "4",
+      "username": "sparklingwater123",
+      "address": "0x664ce9fb97ae1bbd538d7381b2f4e92dab16f49c",
+      "pnl": 8474966.272472015,
+      "vol": 19001698.927902,
+      "roi_pct": 44.6
+    },
+    {
+      "rank": "5",
+      "username": "GRIMDRIP",
+      "address": "0x3f87d51f27ba6e19ec52aaeebb68559a839c742c",
+      "pnl": 7602742.057861,
+      "vol": 13603969.275332,
+      "roi_pct": 55.89
+    },
+    {
+      "rank": "6",
+      "username": "endlessFate",
+      "address": "0x5e4c3b5b81171e2ca4ab776ac0d6bba787f9dba2",
+      "pnl": 7409836.652610293,
+      "vol": 26282164.742856003,
+      "roi_pct": 28.19
+    },
+    {
+      "rank": "7",
+      "username": "swisstony",
+      "address": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+      "pnl": 5165522.5339703765,
+      "vol": 439493542.12405705,
+      "roi_pct": 1.18
+    },
+    {
+      "rank": "8",
+      "username": "Inaccuratestake",
+      "address": "0xf8831548531d56ad6a4331493243c447a827cd1f",
+      "pnl": 3947667.1741291904,
+      "vol": 19153226.719343,
+      "roi_pct": 20.61
+    },
+    {
+      "rank": "9",
+      "username": "BreakTheBank",
+      "address": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+      "pnl": 3915643.647733608,
+      "vol": 84585424.116463,
+      "roi_pct": 4.63
+    },
+    {
+      "rank": "10",
+      "username": "1two1two",
+      "address": "0x72254fe1a79fc8fd37de0168be735e6af4bd659a",
+      "pnl": 3203267.479859789,
+      "vol": 9931654.142131,
+      "roi_pct": 32.25
+    }
+  ],
+  "vol_leaders": [
+    {
+      "rank": "7",
+      "username": "swisstony",
+      "address": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+      "pnl": 5165522.5339703765,
+      "vol": 439493542.12405705,
+      "roi_pct": 1.18
+    },
+    {
+      "rank": "11",
+      "username": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+      "address": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+      "pnl": 3174605.647134743,
+      "vol": 312240425.29247993,
+      "roi_pct": 1.02
+    },
+    {
+      "rank": "28",
+      "username": "RN1",
+      "address": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
+      "pnl": 1151178.2667688762,
+      "vol": 169268138.377934,
+      "roi_pct": 0.68
+    },
+    {
+      "rank": "32",
+      "username": "alwayslatetotheparty",
+      "address": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
+      "pnl": 940093.6620476164,
+      "vol": 161715625.97952303,
+      "roi_pct": 0.58
+    },
+    {
+      "rank": "9",
+      "username": "BreakTheBank",
+      "address": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+      "pnl": 3915643.647733608,
+      "vol": 84585424.116463,
+      "roi_pct": 4.63
+    },
+    {
+      "rank": "22",
+      "username": "0xd4aa6f8e91cfea29b66a48ebff52814",
+      "address": "0x709e8dcb133555794decc598e07f2c923b8366f5",
+      "pnl": 1348373.7282298163,
+      "vol": 46851271.868086,
+      "roi_pct": 2.88
+    },
+    {
+      "rank": "14",
+      "username": "Latina",
+      "address": "0x26437896ed9dfeb2f69765edcafe8fdceaab39ae",
+      "pnl": 2544491.2244514218,
+      "vol": 46413756.436295,
+      "roi_pct": 5.48
+    },
+    {
+      "rank": "49",
+      "username": "AnonymousUsername",
+      "address": "0x9703676286b93c2eca71ca96e8757104519a69c2",
+      "pnl": 558854.1866687643,
+      "vol": 42534678.793676004,
+      "roi_pct": 1.31
+    },
+    {
+      "rank": "48",
+      "username": "UpTheBlues",
+      "address": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
+      "pnl": 562355.9228191581,
+      "vol": 38445178.44981299,
+      "roi_pct": 1.46
+    },
+    {
+      "rank": "36",
+      "username": "Allezpapa",
+      "address": "0xe549581668a5751c1972d3ad2d1991d900bd2d54",
+      "pnl": 754668.0243566643,
+      "vol": 36170099.26969501,
+      "roi_pct": 2.09
+    }
+  ],
+  "mid_tier": [
+    {
+      "rank": "15",
+      "username": "skyblue77",
+      "address": "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0",
+      "pnl": 1839104.9443646525,
+      "vol": 4938242.256860999,
+      "roi_pct": 37.24
+    },
+    {
+      "rank": "24",
+      "username": "gardenshed",
+      "address": "0x81da605d7dac06478367ed1bae0593b7791ca109",
+      "pnl": 1282152.1889502972,
+      "vol": 3768550.5288299997,
+      "roi_pct": 34.02
+    },
+    {
+      "rank": "26",
+      "username": "wan123",
+      "address": "0xde7be6d489bce070a959e0cb813128ae659b5f4b",
+      "pnl": 1193026.2502725176,
+      "vol": 4529374.429475999,
+      "roi_pct": 26.34
+    },
+    {
+      "rank": "29",
+      "username": "downtownfee",
+      "address": "0xbee54d90051720e27921dc6874f02d646ffca636",
+      "pnl": 1074595.3272173721,
+      "vol": 3973705.9129170002,
+      "roi_pct": 27.04
+    },
+    {
+      "rank": "34",
+      "username": "Nexuus",
+      "address": "0xce5bec63b40392845a9a504915f607c8e03a047a",
+      "pnl": 859469.7575301027,
+      "vol": 1054582.6800000002,
+      "roi_pct": 81.5
+    },
+    {
+      "rank": "37",
+      "username": "Badgeroff",
+      "address": "0x58483a07148bf1c4ddc4a1f0c0ea8daeb9e8a698",
+      "pnl": 692857.5216683862,
+      "vol": 3222958.021474,
+      "roi_pct": 21.5
+    },
+    {
+      "rank": "39",
+      "username": "hot2trot",
+      "address": "0xb61b2079b95f6b7476fd3203e0274ffb93308a06",
+      "pnl": 674570.0189063161,
+      "vol": 2391484.4208,
+      "roi_pct": 28.21
+    },
+    {
+      "rank": "42",
+      "username": "Oneger",
+      "address": "0xe9a6ed2e4d4ee8ce47cd47cac834746dc4cf627b",
+      "pnl": 640920.9288833365,
+      "vol": 3795110.131488,
+      "roi_pct": 16.89
+    },
+    {
+      "rank": "43",
+      "username": "Soarin22",
+      "address": "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
+      "pnl": 619368.9484718598,
+      "vol": 2640886.672297,
+      "roi_pct": 23.45
+    },
+    {
+      "rank": "45",
+      "username": "Erasmus.",
+      "address": "0xc6587b11a2209e46dfe3928b31c5514a8e33b784",
+      "pnl": 598042.4340383087,
+      "vol": 2099367.4,
+      "roi_pct": 28.49
+    },
+    {
+      "rank": "47",
+      "username": "Wickier",
+      "address": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
+      "pnl": 566652.3981826717,
+      "vol": 1449445.6004279996,
+      "roi_pct": 39.09
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "updated": "2026-06-28T03:47:44.786237+00:00",
+  "wallets": [
+    {
+      "address": "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0",
+      "username": "skyblue77",
+      "roi_pct": 37.24,
+      "copy_score": 99.79,
+      "strategy": "sports_accumulator",
+      "win_rate_closed": 1.0,
+      "leaderboard_pnl": 1839104.9443646525,
+      "leaderboard_vol": 4938242.256860999
+    },
+    {
+      "address": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+      "username": "DimSumConnoisseur.",
+      "roi_pct": 40.4,
+      "copy_score": 98.51,
+      "strategy": "sports_accumulator",
+      "win_rate_closed": 0.905,
+      "leaderboard_pnl": 458601.7555373941,
+      "leaderboard_vol": 1135185.843756
+    },
+    {
+      "address": "0x81da605d7dac06478367ed1bae0593b7791ca109",
+      "username": "gardenshed",
+      "roi_pct": 34.02,
+      "copy_score": 97.22,
+      "strategy": "sports_accumulator",
+      "win_rate_closed": 1.0,
+      "leaderboard_pnl": 1282152.1889502972,
+      "leaderboard_vol": 3768550.5288299997
+    },
+    {
+      "address": "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
+      "username": "Soarin22",
+      "roi_pct": 23.45,
+      "copy_score": 88.76,
+      "strategy": "sports_accumulator",
+      "win_rate_closed": 1.0,
+      "leaderboard_pnl": 619368.9484718598,
+      "leaderboard_vol": 2640886.672297
+    },
+    {
+      "address": "0x5bdd63899629bcfa0375496df6fdc271c18dc4cb",
+      "username": "tussss1881",
+      "roi_pct": 35.07,
+      "copy_score": 88.05,
+      "strategy": "sports_accumulator",
+      "win_rate_closed": 1.0,
+      "leaderboard_pnl": 428051.46983243,
+      "leaderboard_vol": 1220690.464029
+    }
+  ]
+}

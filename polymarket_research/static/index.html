@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polo — Paper Trading</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <span class="logo">◆</span>
+        <div>
+          <h1>Polo Paper Trading</h1>
+          <p class="subtitle">Skilled Copy + Fee-Aware Conviction · $1,000 simulated</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <span id="ws-status" class="pill pill-connecting">CONNECTING</span>
+        <span id="status-pill" class="pill pill-live">LIVE PAPER</span>
+        <span id="updated-at" class="muted">—</span>
+      </div>
+    </header>
+
+    <div id="pause-banner" class="pause-banner hidden">
+      <strong>Trading paused</strong>
+      <span id="pause-reason"></span>
+      <button id="btn-resume" class="btn btn-sm">Resume</button>
+    </div>
+
+    <section class="metrics">
+      <div class="metric-card">
+        <span class="metric-label">Equity</span>
+        <span id="m-equity" class="metric-value">—</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Cash</span>
+        <span id="m-cash" class="metric-value">—</span>
+      </div>
+      <div class="metric-card highlight">
+        <span class="metric-label">Total P&amp;L</span>
+        <span id="m-pnl" class="metric-value">—</span>
+        <span id="m-return" class="metric-sub">—</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Unrealized</span>
+        <span id="m-unrealized" class="metric-value">—</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Realized</span>
+        <span id="m-realized" class="metric-value">—</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Deployed</span>
+        <span id="m-deployed" class="metric-value">—</span>
+        <span id="m-positions" class="metric-sub">0 positions</span>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <button id="btn-scan" class="btn btn-primary">Scan &amp; Trade</button>
+      <button id="btn-prices" class="btn">Refresh Prices</button>
+      <button id="btn-watchlist" class="btn">Refresh Copy Targets</button>
+      <button id="btn-reset" class="btn btn-danger">Reset $1,000</button>
+      <label class="auto-refresh">
+        <input type="checkbox" id="auto-refresh" checked /> Live stream (WebSocket)
+      </label>
+    </section>
+
+    <div class="grid-2">
+      <section class="panel">
+        <h2>Copy Targets <span class="badge" id="watchlist-count">0</span></h2>
+        <p class="panel-desc">Mid-tier sports specialists we mirror (4% sizing each)</p>
+        <div id="watchlist" class="watchlist"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Equity Curve</h2>
+        <canvas id="equity-chart" height="160"></canvas>
+      </section>
+    </div>
+
+    <section class="panel">
+      <h2>Open Positions <span class="badge" id="open-count">0</span></h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Market</th>
+              <th>Copy From</th>
+              <th>Entry</th>
+              <th>Now</th>
+              <th>Shares</th>
+              <th>Cost</th>
+              <th>Unrealized P&amp;L</th>
+              <th>Resolves In</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody id="positions-body">
+            <tr><td colspan="9" class="empty">No open positions</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Closed Trades <span class="badge" id="closed-count">0</span></h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Market</th>
+              <th>Copy From</th>
+              <th>Entry → Exit</th>
+              <th>Realized P&amp;L</th>
+              <th>Reason</th>
+              <th>Closed</th>
+            </tr>
+          </thead>
+          <tbody id="closed-body">
+            <tr><td colspan="6" class="empty">No closed trades yet</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Activity Log</h2>
+      <div id="activity-log" class="activity-log"></div>
+    </section>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
